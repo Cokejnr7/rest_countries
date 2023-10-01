@@ -17,8 +17,8 @@ const HomePage = () => {
 
   return (
     <main className=" py-6">
-      <div className="mx-auto container">
-        <div className="px-4 md:px-32 flex  justify-between flex-wrap">
+      <div className="mx-auto flex flex-col container">
+        <div className="px-8 md:px-32 flex  justify-between flex-wrap">
           <CardList countries={countries} />
         </div>
       </div>
