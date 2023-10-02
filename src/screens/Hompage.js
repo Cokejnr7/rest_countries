@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import country from "../api/countries";
-import CardItem from "../components/CardItem";
 import CardList from "../components/CardList";
 
 const HomePage = () => {
@@ -18,7 +17,7 @@ const HomePage = () => {
   return (
     <main className=" py-6">
       <div className="mx-auto flex flex-col container">
-        <div className="px-8 md:px-32 flex  justify-between flex-wrap">
+        <div className="px-8 md:px-32 flex flex-col items-center flex-wrap lg:flex-row lg:justify-between">
           <CardList countries={countries} />
         </div>
       </div>
