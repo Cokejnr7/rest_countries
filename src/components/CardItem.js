@@ -14,7 +14,7 @@ const CardItem = ({ country }) => {
   });
 
   return (
-    <div className="max-w-[18rem] rounded  overflow-hidden shadow-md mb-10 lg:mb-24">
+    <div className="rounded overflow-hidden shadow-md">
       <img
         src={country.flags.png}
         alt=""
