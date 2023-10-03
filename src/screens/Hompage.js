@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import country from "../api/countries";
 import CardList from "../components/CardList";
 import Container from "../components/Container";
+import Filter from "../components/Filter";
 
 const HomePage = () => {
   const [countries, setCountries] = useState([]);
@@ -16,8 +17,9 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className="py-6 w-full">
-      <Container className="flex flex-col px-6 lg:px-20">
+    <main className="pt-20 w-full">
+      <Container className="flex gap-y-20 flex-col px-6 lg:px-20">
+        <Filter />
         <CardList countries={countries} />
       </Container>
     </main>
