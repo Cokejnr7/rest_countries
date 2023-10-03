@@ -5,7 +5,7 @@ const CardList = ({ countries }) => {
     return <CardItem country={country} key={country.name} />;
   });
   return (
-    <div className="px-10 grid grid-cols-4  gap-x-10 gap-y-10">
+    <div className="grid gap-x-12 gap-y-10 md:gap-y-20 country-list">
       {renderedCountries}
     </div>
   );

@@ -16,8 +16,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className="py-6">
-      <Container className="flex flex-col">
+    <main className="py-6 w-full">
+      <Container className="flex flex-col px-6 lg:px-20">
         <CardList countries={countries} />
       </Container>
     </main>

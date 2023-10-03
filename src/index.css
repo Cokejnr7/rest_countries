@@ -10,3 +10,7 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     min-width: 375px;
 }
+
+.country-list{
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
