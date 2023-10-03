@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import country from "../api/countries";
 import CardList from "../components/CardList";
+import Container from "../components/Container";
 
 const HomePage = () => {
   const [countries, setCountries] = useState([]);
@@ -16,9 +17,9 @@ const HomePage = () => {
 
   return (
     <main className="py-6">
-      <div className="mx-auto flex flex-col container">
+      <Container className="flex flex-col">
         <CardList countries={countries} />
-      </div>
+      </Container>
     </main>
   );
 };

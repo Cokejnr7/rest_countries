@@ -2,8 +2,8 @@ import Container from "./Container";
 
 const Navbar = () => {
   return (
-    <nav className="py-6 shadow-md w-full">
-      <Container className="flex justify-between px-2 md:px-10">
+    <nav className="py-8 shadow-md w-full">
+      <Container className="flex justify-between px-2 md:px-20">
         <h2 className="text-md font-bold md:text-2xl">Where in the world?</h2>
         <span className="flex gap-x-2 items-center cursor-pointer">
           <i className="fa fa-moon">&#xf186;</i>
