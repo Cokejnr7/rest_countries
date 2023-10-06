@@ -18,7 +18,7 @@ const HomePage = () => {
 
   return (
     <main className="pt-20 w-full">
-      <Container className="flex gap-y-20 flex-col px-6 lg:px-20">
+      <Container className="flex gap-y-20 flex-col md:px-12">
         <Filter />
         <CardList countries={countries} />
       </Container>
