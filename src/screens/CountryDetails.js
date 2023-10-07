@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import countries from "../api/countries";
 import Container from "../components/Container";
+import { BsArrowLeft } from "react-icons/bs";
 
 const CountryDetails = () => {
   const { name } = useParams();
@@ -23,7 +24,8 @@ const CountryDetails = () => {
   return (
     <Container className={"flex flex-col gap-10 pt-10"}>
       <span className="flex items-center gap-x-2">
-        <i className="fa text-xl">&#xf177;</i>Back
+        <BsArrowLeft />
+        Back
       </span>
       <div className="flex flex-wrap justify-between ">
         <img src={country?.flags.svg} alt="" className="xl:w-1/2 h-96" />
