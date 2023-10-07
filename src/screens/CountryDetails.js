@@ -21,8 +21,10 @@ const CountryDetails = () => {
   }, [name]);
 
   return (
-    <Container className={"flex flex-col"}>
-      Country Details
+    <Container className={"flex flex-col gap-10 pt-10"}>
+      <span className="flex items-center gap-x-2">
+        <i className="fa text-xl">&#xf177;</i>Back
+      </span>
       <div className="flex flex-wrap justify-between ">
         <img src={country?.flags.svg} alt="" className="xl:w-1/2 h-96" />
         <div className="flex flex-col justify-center py-6">
