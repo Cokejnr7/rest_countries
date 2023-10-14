@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CardItem = ({ country }) => {
   const config = [
     { name: "Population", display: country.population },
@@ -15,14 +17,18 @@ const CardItem = ({ country }) => {
 
   return (
     <div className="rounded overflow-hidden shadow-md">
-      <img
-        src={country.flags.png}
-        alt=""
-        className="w-full h-1/2 object-cover"
-      />
+      <Link to={`/countries/${country.name}`}>
+        <img
+          src={country.flags.png}
+          alt=""
+          className="w-full h-1/2 object-cover"
+        />
+      </Link>
 
       <div className="flex flex-col gap-y-3  px-6 pb-14 pt-6">
-        <h3 className="font-bold text-lg">{country.name}</h3>
+        <Link to={`/countries/${country.name}`}>
+          <h3 className="font-bold text-lg">{country.name}</h3>
+        </Link>
         <ul>{renderContents}</ul>
       </div>
     </div>

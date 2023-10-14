@@ -23,7 +23,7 @@ const CountryDetails = () => {
 
   return (
     <Container className={"flex flex-col gap-10 pt-10"}>
-      <span className="flex items-center gap-x-2">
+      <span className="flex items-center justify-center gap-x-3 rounded py-1 shadow-md max-w-[7rem] cursor-pointer">
         <BsArrowLeft />
         Back
       </span>
